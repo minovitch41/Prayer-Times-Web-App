@@ -121,8 +121,10 @@ body {
 
 /* My Time Styles */
 .MyTime {
+    position: relative;
+    left: 0px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 8px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -157,6 +159,7 @@ body {
 @media screen and (max-width: 768px) {
     .MyTime {
         width: 100%;
+        left:-6px;
     }
 }
 
