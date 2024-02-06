@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Adhan Prayer Time | DZ</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Add Google Font Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- add Library Axios js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div class="Fully">
+      <!-- Start Header -->
+      <div class="header">
+        <div class="title">
+          <h2>موقع الأذان في بعض الولايات الجزائر</h2>
+        </div>
+        <div class="buttons"></div>
+      </div>
+      <!-- End Header -->
+
+      <!-- Start Content -->
+      <div class="content">
+        <!-- Start Box -->
+        <div class="box">
+          <div class="Pray">
+            <h1>الفجر:</h1>
+            <span class="time" id="Fajr_Time">00:00AM</span>
+          </div>
+          <div class="Pray">
+            <h1>الشروق:</h1>
+            <span class="time" id="Sunrise_Time">00:00AM</span>
+          </div>
+          <div class="Pray">
+            <h1>الظهر:</h1>
+            <span class="time" id="Dhuhr_Time">00:00AM</span>
+          </div>
+          <div class="Pray">
+            <h1>العصر:</h1>
+            <span class="time" id="Asr_Time">00:00AM</span>
+          </div>
+          <div class="Pray">
+            <h1>المغرب:</h1>
+            <span class="time" id="Maghrib_Time">00:00AM</span>
+          </div>
+          <div class="Pray">
+            <h1>العشاء:</h1>
+            <span class="time" id="Isha_Time">00:00AM</span>
+          </div>
+        </div>
+        <!-- End Box -->
+        <!-- Start Location  -->
+        <div class="location">
+          <div class="F_Location">
+            <select name="" id="cites_select" class="select"></select>
+          </div>
+        </div>
+
+        <!-- End Location  -->
+        <!-- Start Your Time -->
+        <div class="MyTime">
+          <div>
+            <h4 style="direction: rtl">توقيتك الحالي :</h4>
+            <div id="timestamp" style="direction:ltr;"">
+          </div>
+        </div>
+        <br />
+        <div class="MyTime">
+          <div style="direction: ltr">
+            <h4>
+              <span id="weekday"></span><br />
+              <span id="readable"></span>
+            </h4>
+          </div>
+        </div>
+        <!-- End Your Time -->
+      </div>
+      <!-- End Content -->
+    </div>
+    
+    <script type="module" src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
